@@ -1,62 +1,294 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
-</head>
-<body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dáiton Cheis</title>
+    <link rel="stylesheet" type="text/css" href="/assets/global.css" />
+    <link rel="stylesheet" type="text/css" href="assets/buttonStyle.css" />
+  </head>
+  <style>
+    *{
+        text-align: justify;
+        list-style: none;
+        background-color: rgb(15, 18, 41);
+        color: aliceblue;
+        }
+    body {
+        list-style: none;
+    }
+
+     a:hover{
+        background: #0851b1;
+        color: #44c0df;
+        box-shadow: 0 0 5px #e8eef1,
+        0 0 25px #d6d6d4,
+        0 0 50px #e6ece7,
+        0 0 200px #6b03f4;
+    }
+  </style>
+
+  <body>
+    <h1 id="topo" align="center">HTML</h1>
     <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    <h2 align="center">Índice</h2>
+    <p>
+      Abaixo estão descritos os tópicos estudados até o momento na jornada de
+      aprendizado sobre HTML.
+    </p>
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+      <li><a href="#web">História da Web</a></li>
+      <li>
+        <a href="#clients">O que são <i>Clients</i>?</a>
+      </li>
+      <li>
+        <a href="#servers">O que são <i>Servers</i>?</a>
+      </li>
+      <li><a href="#linguagem">Linguagens de Programação</a></li>
+      <li><a href="#html">Estrutura básica de um HTML</a></li>
+      <li>
+        <a href="#tags">Falando sobre <i>Tags</i></a>
+      </li>
+      <li>
+        <a href="#atributos"><i>Atributos</i> das Tags</a>
+      </li>
+      <li><a href="#tag_texto">Tags de Texto</a></li>
+      <li><a href="#listas">Listas Ordenadas e Não Ordenadas</a></li>
+      <li><a href="#links">Links de referências</a></li>
     </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="web" align="center">História da Web</h2>
+    <p>
+      A história da <strong>Internet</strong> é também acompanhada da história
+      da <strong>técnologia</strong> como um todo. Desde de o surgimento dos
+      primeiros computadores, como por exemplo o <i>Harvard Mark I</i>, o
+      <i>Colossus</i> e o <i>ENIAC</i> que eram máquinas enormes e que
+      funcionavam com válvulas, até os computadores atuais que são ultrafinos e
+      portáteis com uma quantidade enorme de chips de circuitos integrados.
+    </p>
+    <p>
+      A <strong>Internet</strong> que surgiu em um primeiro momento para a
+      <u>comunicação entre universidades</u> e em seguida foi utilizada no
+      <u>ambiente militar</u>, logo foi percebida como uma ferramenta que
+      poderia ser amplamente utilizada, sendo difundidade em
+      <u>todas as áreas de atuação</u>.
+    </p>
+    <p>
+      <small><a href="#topo">Voltar para o topo</a></small>
+    </p>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="clients" align="center">O que são <i>Clients</i>?</h2>
+    <p>
+      Nesta etapa foram apresentados os conceitos de <strong>Client</strong>,
+      <strong>Navegadores</strong>, <strong>Aplicações Web</strong> e
+      <strong>Dispositivos móveis</strong>.
+    </p>
+    <p>
+      <i>Client</i> é o termo utilizado para o lado do usuário em uma aplicação
+      ou programa, que recebe os dados do servidor para utiliza-los em sua
+      máquina local.
+    </p>
+    <p>
+      <i>Navegadores</i> são programas utilizados para a intepretação das
+      páginas <i>HTML</i> recebidas do servidor. Há uma grande variedade de
+      navegadores, também conhecidos como <u>"browsers"</u>, porém a
+      intepretação do arquivo pode variar de um para o outro dependendo da
+      tecnologia utilizada.
+    </p>
+    <p>
+      <i>Aplicações Web</i> são soluções que utilizam a
+      <strong>internet</strong> como meio de comunição, não sendo necessária a
+      instalação de qualquer programa específico para a utilização da mesma.
+    </p>
+    <p>
+      <i>Dispositivos móveis</i> são os equipamentos que podem se conectar a
+      <strong>internet</strong> e serem utilizados de
+      <u>praticamente qualquer lugar</u>, como por exemplo, <i>laptops</i>,
+      <i>tablets</i>, <i>smartwatchs</i> e <i>smartphones</i>.
+    </p>
+    <p>
+      <small><a href="#topo">Voltar para o topo</a></small>
+    </p>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="servers" align="center">O que são <i>Servers</i>?</h2>
+    <p>
+      <i>Servers</i> que significa <strong>Servidores</strong>, são basicamente
+      computadores mais potentes e com mais performance, onde os
+      <i>Clients</i> (usuários) solicitam ou executam algum tipo de aplicação.
+    </p>
+    <p>
+      Existem vários tipos de servidores e alguns dos exemplos apresentados
+      foram:
+    </p>
+    <dl >
+      <dt align="center"><strong >Servidor de arquivos</strong></dt>
+      <dd>
+        É um servidor onde é possível o armazenamento de arquivos, um exemplo
+        muito popular é o
+        <a href="https://drive.google.com/" target="_blank">Google Drive</a>.
+      </dd>
+      <dt align="center"><strong>Servidor Firewall (Segurança)</strong></dt>
+      <dd>
+        É um servidor onde são configuradas as específicações de segurança de
+        uma rede, descrevendo as possibilidades de entrada e saída de pacotes da
+        mesma.
+      </dd>
+      <dt align="center"><strong align="center">Servidor de Streaming</strong></dt>
+      <dd>
+        É um servidor onde as aplicações de <i>Streaming</i> são executadas, um
+        exemplo muito famoso desse tipo de servidor é o
+        <a href="https://www.netflix.com/" target="_blank">Netflix</a>.
+      </dd>
+      <dt align="center"><strong align="center">Servidor de e-mail</strong></dt>
+      <dd>
+        É um servidor onde são armazenados os <i>e-mails</i> enviados e enviados
+        de um domínio ou rede específica. Um exemplo muito famoso é
+        <a href="https://outlook.office.com/mail/" target="_blank">Outlook</a>,
+        muito utilizado por diversas pessoas, além do
+        <a href="https://mail.google.com/mail/" target="_blank">Gmail</a> da
+        Google.
+      </dd>
+      <dt align="center"><strong>Servidor Web</strong></dt>
+      <dd>
+        É um servidor onde são armazenadas as páginas Web, contendo todos os
+        arquivos que fazem parte da mesma, como os arquivos HTML, CSS e
+        JavaScript.
+      </dd>
+    </dl>
+    <p>
+      <small><a href="#topo">Voltar para o topo</a></small>
+    </p>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="linguagem" align="center">Linguagens de Programação</h2>
+    <p>
+      <i>Linguagem de programação</i> é uma linguagem escrita e formal que
+      especifica um conjunto de instruções e regras usadas para a criação de
+      programas (<i>softwares</i>). Cada <i>linguagem de programação</i> tem sua
+      particularidade e usuabilidade. Há linguagens que são utilizadas em
+      servidores (<u>Server-side</u>), como há linguagens utilizados na máquinas
+      de usuários (<u>Client-side</u>)
+    </p>
+    <p>
+      Linguagens <i>Server-side</i> são linguagens que são executadas em
+      servidores, como por exemplo <a href="https://www.php.net/">PHP</a>,
+      <a href="https://www.ruby-lang.org/en/">Ruby</a>,
+      <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">C#</a>,
+      <a href="https://www.java.com/">Java</a>,
+      <a href="https://www.javascript.com/">JavaScript</a>, etc.
+    </p>
+    <p>
+      <small><a href="#topo">Voltar para o topo</a></small>
+    </p>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="html" align="center">Estrutura básica de um HTML</h2>
+    <p>
+      <i><abbr title="Hypertext Markup Language">HTML</abbr></i> é uma linguagem
+      de <del>programação</del> marcação na qual são utilizados textos
+      delimitados por nomes que o navegador consegue interpretar, cada nome
+      destes delimitadores tem uma função e comportamento específico. Os
+      delimitadores são chamados de <i>Tags</i>, a seguir será observados as
+      particularidades de algumas das <i>Tags</i> mais utilizadas e conhecidas
+      em <strong>HTML</strong>.
+    </p>
+    <p>
+      <small><a href="#topo">Voltar para o topo</a></small>
+    </p>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+    <h2 id="tags" align="center">Falando sobre <i>Tags</i></h2>
+    <p>
+      <i>Tags</i> são palavras-chave que definem como o navegador irá formatar e
+      apresentar o conteúdo. Com a ajuda das <i>Tags</i>, o navegador pode
+      distinguir a diferença entre um conteúdo <i>HTML</i> de um conteúdo comum.
+      <i>Tags</i> são formadas por três partes principais: a <u>abertura</u>, o
+      <u>conteúdo</u> e o <u>fechamento</u>. Porém algumas <i>Tags</i> não
+      necessitam de fechamento. Todas as <i>Tags</i>
+      <strong>devem</strong> estar entre os símbolos
+      <span title="Menor que">&lt;</span> e <span title="Maior que">&gt;</span>.
+    </p>
+    <p>
+      <small><a href="#topo">Voltar para o topo</a></small>
+    </p>
+
+    <h2 id="atributos" align="center"><i>Atributos</i> das Tags</h2>
+    <p>
+      <i>Atributos</i> são palavras especiais que promovem informações
+      adicionais ou modificam as <i>Tags</i>. Cada <i>Tag</i> pode ter
+      <i>atributos</i> que definem o comportamento da mesma.
+    </p>
+    <p>
+      Existem <i>atributos</i> que são considerados genéricos, que podem ser
+      usados em qualquer <i>Tag</i>, como por exemplo: &lt;id&gt; e
+      &lt;title&gt;. Porém existem <i>tags</i> com <i>atributos</i> específicos,
+      como a <i>tag</i> &lt;a&gt;, qual o <i>atributo</i> é &quot;href&quot;.
+    </p>
+    <p>
+      Os nomes e valores dos <i>atributos</i> são &quot;case sensitive&quot;, ou
+      seja, diferenciam letras maiúsculas de minúsculas, portanto é recomendado
+      pela
+      <a
+        href="https://www.w3schools.com/html/html_attributes.asp"
+        target="_blank"
+        ><abbr title="World Wide Web Consortium">W3C</abbr></a
+      >
+      que sejam escritos apenas em letras minúsculas.
+    </p>
+    <p>
+      <small><a href="#topo">Voltar para o topo</a></small>
+    </p>
+
+    <h2 id="tag_texto" align="center">Tags de Texto</h2>
+    <p>
+      Algumas das <i>Tags</i> mais conhecidas e utilizadas em <i>HTML</i> são as
+      seguintes:
+    </p>
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+      <li>
+        &lt;H1&gt; até &lt;H6&gt; <sup>tamanho de títulos dos parágrafos</sup>
+      </li>
+      <li>&lt;p&gt;<sup>quebra de parágrafos</sup></li>
+      <li>&lt;i&gt;<sup>itálico</sup></li>
+      <li>&lt;u&gt;<sup>sublinhado</sup></li>
+      <li>&lt;strong&gt;<sup>negrito</sup></li>
+      <li>&lt;ol&gt;<sup>lista ordenada</sup></li>
+      <li>&lt;ul&gt;<sup>lista não ordenada</sup></li>
+      <li>&lt;li&gt;<sup>item da lista</sup></li>
     </ul>
+    <p>
+      <small><a href="#topo">Voltar para o topo</a></small>
+    </p>
 
-</body>
+    <h2 id="listas" align="center">Listas Ordenadas e Não Ordenadas</h2>
+    <p>
+      <u>Listas ordenadas</u> podem ser ordenadas
+      <strong>numéricamente</strong> ou em <strong>ordem alfabética</strong>.
+    </p>
+    <p>
+      <u>Listas não ordenadas</u> podem ser ordenadas por
+      <strong>&quot;bullet points&quot;</strong> <sup>marcação em pontos</sup>.
+    </p>
+    <p>
+      Em ambas as listas a tag <u>&lt;li&gt;</u> deve ser utilizada para a
+      adição dos itens a lista.
+    </p>
+    <p>
+      <small><a href="#topo">Voltar para o topo</a></small>
+    </p>
+
+    <h2 id="links" align="center">Links de referências</h2>
+    <p>
+      Abaixo estão listados os <i> sites</i> que foram utilizados como fonte de
+      consulta para algumas das definições descritas.
+    </p>
+    <ul align="center">
+      <li><a href="#" >http://w3c.org</a></li>
+    </ul>
+    <p>
+      <small><a href="#topo">Home</a></small>
+    </p>
+
+    <blockquote>
+      <i>&quot;Falar é fácil, me mostre o código.&quot; Linus Torvalds </i>
+    </blockquote>
+  </body>
 </html>
